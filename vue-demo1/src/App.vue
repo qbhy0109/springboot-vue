@@ -1,23 +1,26 @@
 <template>
   <div>
-    <Header/>
+    <Header />
+    <div style="display:flex">
+      <router-view />
+    </div>
   </div>
 
-  <router-view/>
 </template>
 
 <style>
-
 </style>
 
-<script>
+<script lang="ts">
 
 import Header from "@/components/Header.vue"
+import Aside from "@/components/Aside.vue"
 
 export default {
-  name:"Layout",
-  components:{
-    Header
+  name: "Layout",
+  components: {
+    Header,
+    Aside,
   },
 }
 </script>
